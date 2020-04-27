@@ -9,8 +9,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import Header from "./header/header"
+import Grid from "./grid/grid"
+import "./layout.scss"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,11 +30,12 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: `1440px`,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
+        
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
