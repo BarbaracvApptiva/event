@@ -98,14 +98,14 @@ class header extends Component {
           <Logo src={Logotype} />
           <div className="section-nav">
             <Notification>
-              <form class="search-container">
+              <form className="search-container">
                 <input
                   id="search-box"
                   type="text"
-                  class="search-box"
+                  className="search-box"
                   name="q"
                 />
-                <label for="search-box">
+                <label htmlFor="search-box">
                   <IconSearch
                     className="glyphicon glyphicon-search search-icon"
                     src={Search}

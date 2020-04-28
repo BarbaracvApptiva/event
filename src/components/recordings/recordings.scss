@@ -1,0 +1,19 @@
+.recordings{
+    position: relative;
+    a{
+        div{
+            top: 221px !important;
+        }
+        
+    }
+}
+.cards-recordings{
+    display: flex;
+    overflow: auto;
+}
+.background-card-basic{
+    background-color: #eceaff;
+}
+.background-card-green{
+    background-color: var(--lighter-green);
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,QAAQ,EAAE,QAAQ;CACrB;;AACD,AAAA,gBAAgB,CAAA;EACZ,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "conference.scss"
+    ],
+    "names": [],
+    "file": "conference.css"
+}

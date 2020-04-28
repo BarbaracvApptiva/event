@@ -1,0 +1,27 @@
+.link {
+  position: absolute;
+  right: -2px;
+  bottom: -52px;
+}
+
+.margin-link {
+  top: 290px;
+}
+
+.category-basic-color {
+  color: #bfbfbf;
+}
+
+.category-green-color {
+  color: var(--light-forest-green);
+}
+
+.category-green-color {
+  color: var(--dark-indigo);
+}
+
+.margin-description {
+  margin-top: 15px;
+  margin-bottom: 200px;
+}
+/*# sourceMappingURL=commonElements.css.map */

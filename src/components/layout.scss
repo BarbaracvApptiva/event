@@ -628,6 +628,58 @@ pre tt:after {
   --pale-grey: #f1f1fc;
   --perrywinkle: #9b95e8;
 }
+
+.dark-indigo{
+  color: var(--dark-indigo);
+}
+.lighter-green{
+  color: var(--lighter-green);
+}
+.boring-green{
+  color: var(--boring-green);
+}
+.pale-grey{
+  color: var(--pale-grey);
+}
+.dark-slate-blue{
+  color: var(--dark-slate-blue);
+}
+
+.border-bottom-green{
+  border-bottom: solid 1px var(--boring-green);
+}
+
+.border-bottom-purpple{
+  border-bottom: solid 1px var(--pale-grey);
+}
+
+
+
 @import '../components/header/header.scss';
+@import '../components/conference/conference.scss';
+@import '../components/grid/grid.scss';
+@import '../components/commonElements/commonElements.scss';
+@import '../components/sponsor/sponsor.scss';
+@import '../components/press/press.scss';
+@import '../components/workshop/workshop.scss';
+@import '../components/stands/stands.scss';
+@import '../components/community/community.scss';
+@import '../components/material/material.scss';
+@import '../components/recordings/recordings.scss';
+
+
+.a{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
 
 

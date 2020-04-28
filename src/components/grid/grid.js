@@ -1,15 +1,23 @@
 import React, { Component } from "react"
 // import StackGrid from "react-stack-grid";
 import styled from "styled-components"
+import Conference from"../conference/conference"
+import Sponsor from "../sponsor/sponsor"
+import Press from "../press/press"
+import Workshop from "../workshop/workshop"
+import Stands from "../stands/stands"
+import Material from "../material/material"
+import Community from "../community/community"
+import Recordings from "../recordings/recordings"
+
 
 const Grid = styled.div`
   display: grid;
   width:1368px;
-margin:auto;
+  margin:auto;
   grid-template-columns: 672px 324px 324px;
   column-gap: 24px;
   margin-top: 211px;
-  
 `
 const Column1 = styled.div`
   display: flex;
@@ -24,45 +32,50 @@ const Column2 = styled.div`
 const BoxA1 = styled.div`
   width: 672px;
   height: 275px;
-  background: yellow;
+  background-color: #ffffff;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
 `
 const BoxA2 = styled.div`
   width: 672px;
   height: 161px;
-  background: green;
+  background-color: #ffffff;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
 `
 const BoxB1 = styled.div`
   width: 324px;
   height: 184px;
-  background: orangered;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
 `
 const BoxB2 = styled.div`
   width: 324px;
   height: 185px;
-  background: blanchedalmond;
+  background-color: #ffffff;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
 `
 const BoxB3 = styled.div`
   width: 324px;
   height: 343px;
-  background: orange;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
 `
 
 const BoxC1 = styled.div`
   width: 324px;
   height: 572px;
-  background: greenyellow;
+  background-color: #ffffff;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
 `
 const BoxC2 = styled.div`
   width: 324px;
   height: 161px;
-  background: yellowgreen;
+  background-color: #ffffff;
   margin-bottom: 24px;
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.05);
 `
 
 
@@ -73,18 +86,18 @@ class grid extends Component {
   
         <Grid>
           <Column1>
-            <BoxA1></BoxA1>
-            <BoxA1></BoxA1>
-            <BoxA2></BoxA2>
+            <BoxA1 className="paddingBox"><Conference></Conference></BoxA1>
+            <BoxA1 className="paddingBox"><Recordings></Recordings></BoxA1>
+            <BoxA2 className="paddingBox"><Stands></Stands></BoxA2>
           </Column1>
           <Column2>
-          <BoxB1></BoxB1>
-          <BoxB2></BoxB2>
-          <BoxB3></BoxB3>
+          <BoxB1 className="paddingBox background-green"><Sponsor></Sponsor></BoxB1>
+          <BoxB2 className="paddingBox"><Press></Press></BoxB2>
+          <BoxB3 className="paddingBox background-purpple"><Workshop></Workshop></BoxB3>
           </Column2>
           <Column2>
-          <BoxC1></BoxC1>
-          <BoxC2></BoxC2>
+          <BoxC1 className="paddingBox"><Community></Community></BoxC1>
+          <BoxC2 className="paddingBox"><Material></Material></BoxC2>
           </Column2>
 
 

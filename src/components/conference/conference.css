@@ -1,0 +1,10 @@
+.conference {
+  position: relative;
+}
+
+.data-conference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=conference.css.map */

@@ -1,0 +1,23 @@
+.recordings {
+  position: relative;
+}
+
+.recordings a div {
+  top: 221px !important;
+}
+
+.cards-recordings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: auto;
+}
+
+.background-card-basic {
+  background-color: #eceaff;
+}
+
+.background-card-green {
+  background-color: var(--lighter-green);
+}
+/*# sourceMappingURL=recordings.css.map */
