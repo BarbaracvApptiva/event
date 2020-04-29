@@ -654,6 +654,24 @@ pre tt:after {
 }
 
 
+// MODAL
+ 
+.ReactModal__Overlay, .ReactModal__Overlay--after-open{
+  z-index: 10000 !important;
+  transition: all 500ms all;
+  }
+  
+  .ReactModal__Content, .ReactModal__Content--after-open{
+    width: 1236px;
+    height: 702px;
+    border-radius: 5px;
+    border: none !important;
+    background-color: var(--pale-grey);
+    margin: auto;
+    padding: 0 !important;
+  }
+
+
 
 @import '../components/header/header.scss';
 @import '../components/conference/conference.scss';
@@ -666,20 +684,11 @@ pre tt:after {
 @import '../components/community/community.scss';
 @import '../components/material/material.scss';
 @import '../components/recordings/recordings.scss';
+@import '../components/infoConference/infoConference.scss'
 
 
-.a{
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  right: 40px;
-  bottom: 40px;
-  border: 1px solid rgb(204, 204, 204);
-  background: rgb(255, 255, 255);
-  overflow: auto;
-  border-radius: 4px;
-  outline: none;
-  padding: 20px;
-}
+
+
+
 
 

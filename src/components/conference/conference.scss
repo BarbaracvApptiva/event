@@ -1,5 +1,17 @@
 .conference{
     position: relative;
+    .info{
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--boring-green);
+        font-size: 16px;
+        font-weight: 500;
+        position: absolute;
+          left: 45%;
+          bottom: -3%;
+          border-bottom: solid 1px var(--boring-green);
+          text-decoration: none;
+      }
 }
 .data-conference{
     display: flex;

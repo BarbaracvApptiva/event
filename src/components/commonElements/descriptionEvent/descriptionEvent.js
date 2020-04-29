@@ -28,11 +28,7 @@ const Speaker = styled.p`
   font-weight: 500;
   margin-bottom: 5px;
 `
-const Info = styled.p`
-width: 39px;
-  font-size: 16px;
-  font-weight: 500;
-`
+
 
 class descriptionEvent extends Component {
     render() {
@@ -49,9 +45,7 @@ class descriptionEvent extends Component {
                 <Speaker
                 className={this.props.classSp}
                 >{this.props.speaker}</Speaker>
-                <Info
-                className={this.props.classInfo}
-                >{this.props.info}</Info>
+            
                 
             </div>
         );
