@@ -655,21 +655,16 @@ pre tt:after {
 
 
 // MODAL
+
+  .ReactModal__Overlay, .ReactModal__Overlay--after-open{
+    z-index: 10000 !important;
+    transition: all 500ms all;
+    background-color: rgba(23, 19, 75, 0.79) !important;
+    }
+    
+
  
-.ReactModal__Overlay, .ReactModal__Overlay--after-open{
-  z-index: 10000 !important;
-  transition: all 500ms all;
-  }
-  
-  .ReactModal__Content, .ReactModal__Content--after-open{
-    width: 1236px;
-    height: 702px;
-    border-radius: 5px;
-    border: none !important;
-    background-color: var(--pale-grey);
-    margin: auto;
-    padding: 0 !important;
-  }
+
 
 
 
@@ -684,8 +679,11 @@ pre tt:after {
 @import '../components/community/community.scss';
 @import '../components/material/material.scss';
 @import '../components/recordings/recordings.scss';
-@import '../components/infoConference/infoConference.scss'
+@import '../components/infoConference/infoConference.scss';
 
+@import '../../node_modules/react-tabs/style/react-tabs.scss';
+
+@import '../components/infoFollowers/infoFollowers.scss';
 
 
 

@@ -2,3 +2,19 @@
     display: flex;
     border-radius: 5px;
 }
+
+.modal-conference{
+    width: 1236px;
+    height: 702px;
+    border-radius: 5px;
+    border: none !important;
+    background-color: var(--pale-grey);
+    margin: auto;
+    margin-top: 3%;
+    padding: 0 !important;
+
+    &:focus {
+        outline:none;
+    }
+    
+  }

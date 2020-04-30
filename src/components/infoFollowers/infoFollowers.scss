@@ -1,0 +1,44 @@
+
+.modal-followers{
+    width: 653px;
+    height: 736px;
+      border-radius: 5px;
+      border: none !important;
+      background-color: var(--pale-grey);
+      margin: auto;
+      margin-top: 3%;
+      padding: 0 !important;
+      position: relative;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+    }
+    
+
+      &:focus {
+        outline:none;
+    }
+}
+
+
+// TABS
+.react-tabs__tab--selected {
+   background: none ; 
+  border-color: var(--pale-grey); 
+  color: var(--blueberry);
+  border-radius:none;
+  border-bottom: solid 5px var(--lighter-green);
+  margin-bottom: 0px;
+}
+
+.react-tabs__tab-list{
+  display: flex;
+    justify-content: space-evenly;
+  li{
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--blueberry);
+  }
+}

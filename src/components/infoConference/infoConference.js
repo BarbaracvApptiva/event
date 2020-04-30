@@ -7,7 +7,7 @@ import Close from "../../images/close.svg"
 
 const DataLeft = styled.div`
   width: 516px;
-  height: 700px;
+  height: 702px;
   background-image: linear-gradient(152deg, #3c34c2 5%, #7c74d7 126%);
 `
 
@@ -16,6 +16,7 @@ const DataRight = styled.div`
   height: 700px;
   background-color: var(--pale-grey);
   padding: 72px;
+  position:relative;
 `
 
 const Speaker = styled.img`
@@ -109,7 +110,7 @@ const ButtonDownload = styled.button`
   border: none;
 `
 
-const CloseButton = styled.img`
+const CloseButton = styled.button`
   width: 31px;
   height: 31px;
   position: absolute;
@@ -163,6 +164,7 @@ class infoConference extends Component {
 
           <CloseButton 
           src={Close}
+          onClick={this.handleModalClose}
           ></CloseButton>
         </DataRight>
       </div>

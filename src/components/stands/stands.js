@@ -16,7 +16,7 @@ class stands extends Component {
   render() {
     return (
       <div className="stands">
-        <Category name="CONFERENCIA" class="category-basic-color"></Category>
+        <Category name="stands" class="category-basic-color"></Category>
         <div className="logotypes">
             <Logotype src={Logotype1}></Logotype>
             <Logotype src={Logotype2}></Logotype>
