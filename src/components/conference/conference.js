@@ -81,7 +81,7 @@ class conferencia extends Component {
           isOpen={this.state.isModalOpen2}
           onRequestClose={this.handleModalClose}
         >
-          <InfoFollowers></InfoFollowers>
+          <InfoFollowers handleModalClose={this.handleModalClose} />
         </ReactModal>
 
         <ReactModal2
@@ -90,7 +90,7 @@ class conferencia extends Component {
           isOpen={this.state.isModalOpen}
           onRequestClose={this.handleModalClose}
         >
-          <InfoConference></InfoConference>
+          <InfoConference handleModalClose={this.handleModalClose} />
         </ReactModal2>
       </div>
     )

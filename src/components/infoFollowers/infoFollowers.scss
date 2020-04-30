@@ -1,44 +1,92 @@
+.modal-followers {
+  width: 653px;
+  height: 736px;
+  border-radius: 5px;
+  border: none !important;
+  background-color: var(--pale-grey);
+  margin: auto;
+  margin-top: 3%;
+  padding: 0 !important;
+  position: relative;
+  overflow: auto;
 
-.modal-followers{
-    width: 653px;
-    height: 736px;
-      border-radius: 5px;
-      border: none !important;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  &:focus {
+    outline: none;
+  }
+
+  .info-followers {
+    .header {
+      position: fixed;
+      width: 653px;
       background-color: var(--pale-grey);
-      margin: auto;
-      margin-top: 3%;
-      padding: 0 !important;
-      position: relative;
-      overflow: auto;
-
-      &::-webkit-scrollbar {
-        display: none;
     }
-    
-
-      &:focus {
-        outline:none;
-    }
+  }
 }
 
 
 // TABS
-.react-tabs__tab--selected {
-   background: none ; 
-  border-color: var(--pale-grey); 
-  color: var(--blueberry);
-  border-radius:none;
-  border-bottom: solid 5px var(--lighter-green);
-  margin-bottom: 0px;
+.react-tabs {
+  padding-top: 97px;
+
+  .react-tabs__tab--selected {
+    background: none;
+    border-color: var(--pale-grey);
+    color: var(--blueberry);
+    border-radius: none;
+    border-bottom: solid 5px var(--lighter-green);
+    margin-bottom: 0px;
+  }
+
+  .react-tabs__tab-list {
+
+    position: fixed;
+    width: 653px;
+    justify-content: space-evenly;
+    background-color: var(--pale-grey);
+
+    li {
+      // margin-top: 49px;
+      margin-bottom: 0px;
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--blueberry);
+      margin-left: 152px;
+    }
+
+  }
+
+  .react-tabs__tab-panel--selected {
+    display: block;
+    margin-top: 49px;
+    
+  }
+  .react-tabs__tab:focus {
+    box-shadow: none;
+    border-color: none;
+    outline: none;
+    border-bottom: solid 5px var(--lighter-green);
+}
 }
 
-.react-tabs__tab-list{
+// USERS
+.user {
   display: flex;
-    justify-content: space-evenly;
-  li{
-    margin-bottom: 0px;
-    font-size: 18px;
-    font-weight: bold;
-    color: var(--blueberry);
+  justify-content: space-between;
+  height: 90px;
+  border-bottom: solid 1px #979797;
+  padding:16px 52px 11px 47px;
+  align-items: center;
+  .user-name {
+    width: 275px;
+    p{
+      margin-bottom: 0px;
+    }
   }
+
+  
 }

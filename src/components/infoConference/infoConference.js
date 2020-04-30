@@ -110,7 +110,7 @@ const ButtonDownload = styled.button`
   border: none;
 `
 
-const CloseButton = styled.button`
+const CloseButton = styled.img`
   width: 31px;
   height: 31px;
   position: absolute;
@@ -164,7 +164,7 @@ class infoConference extends Component {
 
           <CloseButton 
           src={Close}
-          onClick={this.handleModalClose}
+          onClick={this.props.handleModalClose}
           ></CloseButton>
         </DataRight>
       </div>

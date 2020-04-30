@@ -19,7 +19,17 @@
   outline: none;
 }
 
-.react-tabs__tab--selected {
+.modal-followers .info-followers .header {
+  position: fixed;
+  width: 653px;
+  background-color: var(--pale-grey);
+}
+
+.react-tabs {
+  padding-top: 97px;
+}
+
+.react-tabs .react-tabs__tab--selected {
   background: none;
   border-color: var(--pale-grey);
   color: var(--blueberry);
@@ -28,19 +38,56 @@
   margin-bottom: 0px;
 }
 
-.react-tabs__tab-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.react-tabs .react-tabs__tab-list {
+  position: fixed;
+  width: 653px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: var(--pale-grey);
 }
 
-.react-tabs__tab-list li {
+.react-tabs .react-tabs__tab-list li {
   margin-bottom: 0px;
   font-size: 18px;
   font-weight: bold;
   color: var(--blueberry);
+  margin-left: 152px;
+}
+
+.react-tabs .react-tabs__tab-panel--selected {
+  display: block;
+  margin-top: 49px;
+}
+
+.react-tabs .react-tabs__tab:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: none;
+  outline: none;
+  border-bottom: solid 5px var(--lighter-green);
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 90px;
+  border-bottom: solid 1px #979797;
+  padding: 16px 52px 11px 47px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.user .user-name {
+  width: 275px;
+}
+
+.user .user-name p {
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=infoFollowers.css.map */
