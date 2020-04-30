@@ -25,6 +25,7 @@ const Image = styled.img`
   height: 157px;
   margin-top: 10px;
   margin: auto;
+  
 `
 
 class community extends Component {
@@ -33,11 +34,12 @@ class community extends Component {
       <div className="community">
           <Followers></Followers>
         <Category name="CAFETERÍA" class="category-basic-color"></Category>
-
+<div className="title-community">
         <Title>
           Opina, crea, <br></br> contacta
         </Title>
         <Image src={Illustration}></Image>
+        </div>
         <Chat></Chat>
         <Conversation
           img={User1}

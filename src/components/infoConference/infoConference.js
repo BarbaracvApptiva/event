@@ -116,6 +116,7 @@ const CloseButton = styled.img`
   position: absolute;
   right: 16px;
   top: 16px;
+  cursor: pointer;
 `
 
 class infoConference extends Component {

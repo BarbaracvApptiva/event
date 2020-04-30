@@ -2,6 +2,8 @@ import React, { Component } from "react"
 import styled from "styled-components"
 import Category from "../commonElements/category/category"
 import Link from "../commonElements/link/link"
+import Carousel from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 
 const Card = styled.div`
   min-width: 166px;
@@ -47,9 +49,17 @@ const Recording = props => (
 class recordings extends Component {
   render() {
     return (
-      <div className="recordings">
-        <Category name="GRABACIONES" class="category-basic-color"></Category>
-        <div className="cards-recordings">
+       <div className="recordings">
+           <Category name="GRABACIONES" class="category-basic-color"></Category>
+      <Carousel
+     
+      animationSpeed={1000}
+      slidesPerPage={3}
+      infinite
+      arrows
+      className="cards-recordings"
+      >
+   
           <Recording
             class="background-card-basic"
             classT="lighter-green"
@@ -82,8 +92,10 @@ class recordings extends Component {
             date="2 abril"
           ></Recording>
          
-        </div>
-        <a>
+
+      
+          </Carousel>
+          <a>
             <Link p="Descubrir  +" class="link"></Link>
           </a>
       </div>

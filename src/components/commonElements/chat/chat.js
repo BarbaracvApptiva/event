@@ -7,9 +7,8 @@ const Chat = styled.div`
   width: 100%;
   height: auto;
   margin: auto;
-  margin-top: 16.5px;
   padding-top: 16.5px;
-  border-top: solid 1px var(--blueberry);
+  
   display: flex;
 `
 
@@ -43,6 +42,7 @@ const Messenges = styled.div`
     position: relative;
     top: -45px;
     left: 34px;
+    
 }
   p{
     font-size: 14px;

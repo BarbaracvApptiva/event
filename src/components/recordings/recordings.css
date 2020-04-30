@@ -6,6 +6,15 @@
   top: 221px !important;
 }
 
+.recordings .BrainhubCarousel__arrows {
+  padding: 11px;
+  background-color: #7b59ff;
+}
+
+.recordings .BrainhubCarousel__arrows span {
+  padding: 3px;
+}
+
 .cards-recordings {
   display: -webkit-box;
   display: -ms-flexbox;

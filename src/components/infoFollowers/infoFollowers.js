@@ -16,6 +16,7 @@ const CloseButton = styled.img`
   position: absolute;
   right: 16px;
   top: 16px;
+  cursor: pointer;
 `
 const Title = styled.p`
   height: 31px;

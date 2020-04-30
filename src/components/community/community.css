@@ -1,4 +1,9 @@
 .community {
   position: relative;
 }
+
+.community .title-community {
+  border-bottom: solid 1px var(--blueberry);
+  padding-bottom: 20px;
+}
 /*# sourceMappingURL=community.css.map */

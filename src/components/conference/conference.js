@@ -9,11 +9,16 @@ import ReactModal from "react-modal"
 import { Link } from "gatsby"
 import InfoConference from "../infoConference/infoConference"
 import InfoFollowers from "../infoFollowers/infoFollowers"
+import User1 from "../../images/user1.svg"
+import User2 from "../../images/user2.svg"
+import Chat from "../commonElements/chat/chat"
+import Conversation from "../commonElements/conversation/conversation"
 
 const DataLeft = styled.div`
   width: 256.5px;
   height: 196px;
   border-right: solid 1px var(--blueberry);
+  padding-right: 30px;
 `
 
 const DataRight = styled.div`
@@ -51,7 +56,24 @@ class conferencia extends Component {
 
         <Category name="CONFERENCIA" class="category-basic-color"></Category>
         <div className="data-conference">
-          <DataLeft></DataLeft>
+          <DataLeft>
+            <Chat></Chat>
+            <Conversation
+              img={User2}
+              name="Sonia Ruiz"
+              message="Muy interesante bfds…"
+            ></Conversation>
+            <Conversation
+              img={User1}
+              name="Sonia Ruiz"
+              message="Muy interesante vfd vdsvsdvdsvd lorem ipsum tatata md estrivd lsetgie "
+            ></Conversation>
+            <Conversation
+              img={User2}
+              name="Sonia Ruiz"
+              message="Muy interesante vfd vdsvsdvdsvd lor"
+            ></Conversation>
+          </DataLeft>
           <DataRight>
             <DescriptionEvent
               account="en 00:15 min"
